@@ -1,0 +1,1 @@
+print("Mikä on suorakulmion kanta ja korkeus?")
