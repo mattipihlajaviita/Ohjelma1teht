@@ -9,13 +9,10 @@
 #MUUTEN jos vuosi on jaollinen 4:lla - > ON KARKAUSVUOSI
 #MUUTEN -> ei ole karkausvuosi
 
-#algoritmi2
-#JOS vuosi on jaollinen 400:lla TAI
-#(vuosi EI ole jaollinen 100:lla JA vuosi ???)- >
-#vuosi ON karkausvuosi
-#MUUTEN
-#vuosi ei ole karkausvuosi
+vuosi = int(input("Mikä vuosi? "))
+if vuosi % 400 == 0 or vuosi % 4 == 0 and not vuosi % 100 == 0:
+    print("Vuosi on karkausvuosi")
+else:
+  print("Vuosi ei ole karkausvuosi")
 
-vuosi = int(input("Mikä vuosi?"))
-if vuosi
 
