@@ -4,11 +4,9 @@
 #käyttäjälle, montako senttiä alimmasta sallitusta pyyntimitasta puuttuu.
 #Kuha on alamittainen, jos sen pituus on alle 37 cm.
 
-kuhan_pituus = float(input("Kuinka monta senttimetriä on kalastamasi kuha?"))
+kuhan_pituus = float(input("Kalastamasi kuhan pituus senttimetreinä: "))
 alimitta = 37 - kuhan_pituus
 if kuhan_pituus < 37:
-    print ("Laske kuha takaisin järveen, kuha on", alimitta, "senttimetriä liian pieni")
+    print ("Laske kuha takaisin järveen, kuha on", alimitta, "cm liian pieni")
 if kuhan_pituus >= 37:
-    print("Voit pitää kuhan.)
-
-
+    print("Voit heittää kuhan pannulle.")
