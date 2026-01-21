@@ -29,7 +29,7 @@ while username != username_input or password != password_input:
     salasana = input("Syötä salasana: ")
 
     #jos yrityksiä 5, evätään käyttäjältä pääsy, ohjelma sammuu
-    if yritykset = yritykset_max:
+    if yritykset == yritykset_max:
         print("Pääsy evätty.")
         break
 
