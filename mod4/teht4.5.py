@@ -1,11 +1,12 @@
-#Kirjoita ohjelma, joka kysyy käyttäjältä käyttäjätunnuksen
-#ja salasanan. Jos jompikumpi tai molemmat ovat väärin,
-#tunnus ja salasana kysytään uudelleen. Tätä jatketaan
-#kunnes kirjautumistiedot ovat oikein tai väärät tiedot
-#on syötetty viisi kertaa. Edellisessä tapauksessa tulostetaan
-#Tervetuloa ja jälkimmäisessä Pääsy evätty.
-#(Oikea käyttäjätunnus on python ja salasana rules)
-
+"""
+Kirjoita ohjelma, joka kysyy käyttäjältä käyttäjätunnuksen
+ja salasanan. Jos jompikumpi tai molemmat ovat väärin,
+tunnus ja salasana kysytään uudelleen. Tätä jatketaan
+kunnes kirjautumistiedot ovat oikein tai väärät tiedot
+on syötetty viisi kertaa. Edellisessä tapauksessa tulostetaan
+Tervetuloa ja jälkimmäisessä Pääsy evätty.
+(Oikea käyttäjätunnus on python ja salasana rules)
+"""
 #käyttäjätunnus ja salasana
 username = "python"
 password = "rules"
@@ -25,8 +26,8 @@ while username != username_input or password != password_input:
 
     #lisätään yritys ja pyydetään käyttäjää syöttämään tiedot uudelleen
     yritykset = yritykset + 1
-    tunnus = input("Syötä käyttäjätunnus: ")
-    salasana = input("Syötä salasana: ")
+    username_input = input("Syötä käyttäjätunnus: ")
+    password_input = input("Syötä salasana: ")
 
     #jos yrityksiä 5, evätään käyttäjältä pääsy, ohjelma sammuu
     if yritykset == yritykset_max:
