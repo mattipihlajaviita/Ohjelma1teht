@@ -7,7 +7,6 @@ kerrat = 0
 
 #pisteiden kokonaismäärä
 N = 1000000
-
 #ympyrän pinta-ala
 A_area = math.pi * 1 ** 2
 
