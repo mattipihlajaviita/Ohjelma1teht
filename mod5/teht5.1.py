@@ -9,9 +9,9 @@ kerrat = int(input("Kuinka monta kertaa noppaa heitetään?:"))
 #annetaan muuttujalle summa arvoksi 0
 summa = 0
 #
-for nopan_nro in range(kerrat):
+for i in range(kerrat):
     silmaluku=(random.randint(1,6))
     summa += silmaluku #summa = summa + silmaluku
 
-print(f" Silmälukujen summa on {summa}.")
+print(f"Silmälukujen summa on {summa}.")
 
