@@ -10,13 +10,19 @@ kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa.
 lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)"""
 
 #jorman ehdotus: jaetaan koodi eri funktioihin
-def lisää():
+def lisää(lentoasemat):
+    ICAO = input("Kerro ICAO koodi: ")
+    nimi = input("Lentoaseman nimi: ")
+    lentoasemat[ICAO] = nimi
     #funktio lisää uuden lentokentän sanakirjaan
-def hae():
+def hae(lentoasemat):
+    ICAO = input("Kerro ICAO koodi: ")
+    print (lentoasemat[ICAO])
 
 def tulosta_valikko():
-    print("\nValitse toiminto: ")
+
     print("1 = Lisää uusi lentoasema")
+    print("2 = Tulosta lentoaseman nimi")
     print("9 = Lopeta")
 #pääohjelma
 
@@ -24,10 +30,14 @@ def tulosta_valikko():
 
 lentoasemat = {"EFHK": "Helsinki-Vantaa"}
 
-toiminto = 0
-
+tulosta_valikko()
+toiminto = int(input("Anna toiminto:"))
 while toiminto != 9:
     if toiminto == 1:
-        lisää()
+        lisää(lentoasemat)
+    elif toiminto == 2:
+        hae(lentoasemat)
     else:
         print("Tuntematon toiminto")
+    tulosta_valikko()
+    toiminto = int(input("Anna toiminto:"))

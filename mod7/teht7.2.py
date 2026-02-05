@@ -20,8 +20,8 @@ while nimi != "":
 
     #jos käyttäjän nimi on joukossa, ilmoitetaan siitä
     elif nimi in nimet:
-
         print("Aiemmin syötetty nimi")
+
     #pyydetään käyttäjää syöttämään uusi nimi
     nimi = input("Syötä nimiä: ")
 

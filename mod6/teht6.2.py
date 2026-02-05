@@ -7,9 +7,9 @@ maksimisilmäluku, joka kysytään käyttäjältä ohjelman suorituksen alussa."
 
 import random
 def nopanheitto(tahkot):
-    return random.randint(1,21)
-
+    return random.randint(1,tahkot)
+tahkot = int(input("anna arvo" ))
 silmaluku = 0
-while silmaluku < 21:
-    silmaluku = nopanheitto(21)
+while silmaluku < tahkot:
+    silmaluku = nopanheitto(tahkot)
     print(silmaluku)
