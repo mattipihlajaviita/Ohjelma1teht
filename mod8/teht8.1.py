@@ -13,7 +13,8 @@ def hae_lentokentta(icao):
     if kursori.rowcount >0 :
         for rivi in tulos:
             print(f"Antamasi ICAO-Koodi kuuluu lentokentälle: {rivi[0]}. Lentokentän sijaintikunta on: {rivi[1]}.")
-
+    else:
+        print("Antamallasi ICAO-koodi on virheellinen.")
     return
 
 yhteys = mysql.connector.connect(
