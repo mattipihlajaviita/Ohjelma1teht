@@ -53,8 +53,6 @@ for i in range(1, 11):
     car = Car(platenumber, topspeed, 0, 0)
     cars.append(car)
 
-    print(car.platenumber, car.topspeed)
-
 # kisa alkaa
 race_on = True
 
