@@ -10,11 +10,11 @@ jälkeen auton nopeus. Tee sitten hätäjarrutus määräämällä nopeuden muut
 """
 
 class Car:
-    def __init__(self, platenumber, topspeed, currentspeed=0, km_driven=0):
+    def __init__(self, platenumber, topspeed):
         self.platenumber = platenumber
         self.topspeed = topspeed
-        self.currentspeed = currentspeed
-        self.km_driven = km_driven
+        self.currentspeed = 0
+        self.km_driven = 0
 
     def accelerate(self, speedchange):
         #määritetään uusinopeus

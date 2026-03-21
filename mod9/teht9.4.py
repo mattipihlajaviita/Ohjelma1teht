@@ -68,6 +68,7 @@ while race_on:
             race_on = False
 
 print("Autojen ominaisuudet ensimmäisen ylittäessä maaliviivan:")
+print("__________________________________________")
 for car in cars:
     print(f"Rekisteritunnus: {car.platenumber}")
     print(f"Huippunopeus: {car.topspeed} km/h")
